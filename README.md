@@ -10,7 +10,7 @@ We will classify our input as 7 classes -> Fear, Angry, Neutral, Disgust, Surpri
 FER 2013 -> Dataset by Google can be found at: https://www.kaggle.com/datasets/msambare/fer2013
 
 
-#############################################################################################################################################################################################
+#######################################
 
 Problems in this Dataset:
 Imbalance, Intra-Class Variation, Occulsion, Contrast Variation, Eyeglass, Outliers.
