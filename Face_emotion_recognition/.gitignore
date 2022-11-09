@@ -1,0 +1,11 @@
+*.mp4
+.DS_store
+.face_emotion_model.h5
+node_modules
+*.txt
+*.h5
+.sass-cache
+*.xml
+/images/
+/Music_Player/
+
