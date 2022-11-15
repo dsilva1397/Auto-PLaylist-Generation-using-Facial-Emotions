@@ -8,4 +8,4 @@ node_modules
 *.xml
 /images/
 /Music_Player/
-
+*.csv
