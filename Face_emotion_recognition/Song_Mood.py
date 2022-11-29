@@ -222,8 +222,8 @@ def Recommend_Songs(primary_emo, secondary_emo):
 
 df = pd.read_csv('Face_emotion_recognition/data_moods.csv')
 df = df.drop(['release_date', 'album','length'], axis = 1)
-music_player = df[['name', 'artist', 'mood', 'popularity']]
 df.insert(0, 'id_', range(1, 1 + len(df)))
+music_player = df[['name', 'artist', 'mood', 'popularity','id_']]
     
 X = df.drop(['mood','artist','name','id'], axis = 1)
 y = df['mood']
@@ -275,7 +275,10 @@ print("GNB={}, LR={}, SVC={}, DT={}".format(mean(acc), mean(acc1), mean(acc_SVC)
 # print(y.tail(5))
 
 second_emo = gnb.predict(X)
-df.insert(0, 'SE', second_emo)
+music_player.insert(0, 'SE', second_emo)
+
+print('DF',df)
+print("MUSIC",music_player)
 
 songs = Recommend_Songs('Sad',"Neutral")
 print(songs)

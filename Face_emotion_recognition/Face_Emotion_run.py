@@ -3,7 +3,6 @@ from keras.models import load_model
 import cv2
 from keras.preprocessing import image
 from tensorflow.keras.utils import img_to_array
-# from keras.preprocessing.image import img_to_array
 from time import sleep
 import time
 # from SoundCloud import get_song
