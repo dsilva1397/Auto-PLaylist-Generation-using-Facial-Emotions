@@ -5,8 +5,7 @@ from keras.preprocessing import image
 from tensorflow.keras.utils import img_to_array
 from time import sleep
 import time
-# from SoundCloud import get_song
-# from Song_Mood import Recommend_Songs
+
 
 def avr_emotion(detected_emotions):
 

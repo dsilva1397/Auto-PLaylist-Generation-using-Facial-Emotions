@@ -277,8 +277,8 @@ print("GNB={}, LR={}, SVC={}, DT={}".format(mean(acc), mean(acc1), mean(acc_SVC)
 second_emo = gnb.predict(X)
 music_player.insert(0, 'SE', second_emo)
 
-print('DF',df)
-print("MUSIC",music_player)
+# print('DF',df)
+# print("MUSIC",music_player)
 
 songs = Recommend_Songs('Sad',"Neutral")
-print(songs)
+# print(songs)
