@@ -19,4 +19,4 @@ print(songs)
 
 # Start SoundCloud
 print('\n',"---------------------------------------------------------")
-Play_Songs(songs)
+Play_Songs(songs,0)

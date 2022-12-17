@@ -88,7 +88,6 @@ def detect_emo():
     return(detected_emotions)
 
 def top2emo(emo):
-    # emo=avr_emotion(detected_emotions)
     max_count = max(emo.values())
     max_emo = max(emo, key=emo.get)
 
@@ -108,6 +107,7 @@ def top2emo(emo):
         max2_emo = max_emo
         max_emo = temp
 
-    
-
+    #If both emotions are Neutral
+    if max_emo == 'Neutral' and max2_emo == 'Neutral':
+        max_emo = "Happy"
     return(max_emo, max2_emo)
