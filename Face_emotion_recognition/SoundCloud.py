@@ -1,7 +1,6 @@
 from selenium import webdriver
 import requests
 import bs4
-import os
 from pynput.mouse import Button
 from pynput.mouse import Controller as CMouse
 import time
