@@ -11,7 +11,6 @@ from sklearn import tree
 from sklearn.model_selection import train_test_split,cross_val_score
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, recall_score
 from numpy import mean
-# from sklearn import preprocessing
 
 import warnings
 warnings.filterwarnings("ignore")

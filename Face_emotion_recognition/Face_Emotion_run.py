@@ -44,7 +44,7 @@ emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
 cap = cv2.VideoCapture(0)
 now = time.time()
-future = now + 10
+# future = now + 10.
 detected_emotions = []
 
 def detect_emo():
@@ -75,13 +75,12 @@ def detect_emo():
             else:
                 cv2.putText(frame,'No Faces',(30,80),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
         cv2.imshow('Emotion Detector',cv2.resize(frame,(1600,960),interpolation = cv2.INTER_CUBIC))
-        if cv2.waitKey(1) & 0xFF== ord('q'):
+        # if cv2.waitKey(1) & 0xFF== ord('q'):
+        #     break
+        future = time.time()
+        num_sec = future - now
+        if num_sec > 20:
             break
-
-        # if time.time() > future:  ##after 10 second music will play
-        #         cv2.destroyAllWindows()
-        #         print("Music Player Opens", time)
-        #         future = time.time() + 10
     cap.release()
     cv2.destroyAllWindows()
 

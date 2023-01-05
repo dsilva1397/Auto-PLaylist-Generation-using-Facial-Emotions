@@ -2,7 +2,7 @@
 .DS_store
 .face_emotion_model.h5
 node_modules
-*.txt
+# *.txt
 *.h5
 .sass-cache
 *.xml
