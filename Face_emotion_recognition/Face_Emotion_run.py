@@ -75,8 +75,8 @@ def detect_emo():
             else:
                 cv2.putText(frame,'No Faces',(30,80),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
         cv2.imshow('Emotion Detector',cv2.resize(frame,(1600,960),interpolation = cv2.INTER_CUBIC))
-        # if cv2.waitKey(1) & 0xFF== ord('q'):
-        #     break
+        if cv2.waitKey(1) & 0xFF== ord('q'):
+            break
         future = time.time()
         num_sec = future - now
         if num_sec > 20:

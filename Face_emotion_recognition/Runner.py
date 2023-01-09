@@ -13,6 +13,7 @@ print(emo,'\n',maxemo,max2emo)
 
 # Recommend Songs
 songs=Recommend_Songs(maxemo,max2emo)
+# songs=Recommend_Songs('Sad',"Angry")
 print('\n',"---------------------------------------------------------")
 print('Songs Recommended:')
 print(songs)

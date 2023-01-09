@@ -25,7 +25,7 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Fear' and secondary_emo =='Happy'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -59,7 +59,7 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Happy' and secondary_emo =='Fear'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -69,12 +69,12 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Happy' and secondary_emo =='Disgust'):
-        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Calm')]
+        Play= music_player.loc[(music_player['mood'] =='Sad') & (music_player['SE']=='Calm')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Happy' and secondary_emo =='Angry'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -87,12 +87,12 @@ def Recommend_Songs(primary_emo, secondary_emo):
     
     # Sad
     if( primary_emo=='Sad' and secondary_emo =='Neutral'):
-        Play = music_player.loc[(music_player['mood'] =='Sad' )& (music_player['SE']=='Energetic')]
+        Play = music_player[(music_player['mood'] =='Sad' )]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Sad' and secondary_emo =='Fear'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Sad')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -102,17 +102,17 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Sad' and secondary_emo =='Disgust'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Sad' and secondary_emo =='Angry'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Energetic')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Sad' and secondary_emo =='Surprised'):
-        Play= music_player.loc[(music_player['mood'] =='Sad') & (music_player['SE']=='Calm')]
+        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Sad')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -124,7 +124,7 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Disgust' and secondary_emo =='Fear'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Energetic')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -134,24 +134,24 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Disgust' and secondary_emo =='Sad'):
-        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Calm')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Disgust' and secondary_emo =='Angry'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Disgust' and secondary_emo =='Surprised'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Energetic')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
 
     # Angry
     if( primary_emo=='Angry' and secondary_emo =='Neutral'):
-        Play = music_player.loc[(music_player['mood'] =='Calm' )& (music_player['SE']=='Happy')]
+        Play = music_player[(music_player['mood'] =='Calm' )]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -161,7 +161,7 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Angry' and secondary_emo =='Happy'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -171,24 +171,24 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Angry' and secondary_emo =='Disgust'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Angry' and secondary_emo =='Surprised'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Energetic')]
+        Play= music_player.loc[(music_player['mood'] =='Energetic') & (music_player['SE']=='Happy')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
         
     # Surprised
     if( primary_emo=='Surprised' and secondary_emo =='Neutral'):
-        Play = music_player.loc[(music_player['mood'] =='Energetic' )& (music_player['SE']=='Happy')]
+        Play = music_player[(music_player['mood'] =='Energetic' )]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Surprised' and secondary_emo =='Fear'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -203,12 +203,12 @@ def Recommend_Songs(primary_emo, secondary_emo):
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Surprised' and secondary_emo =='Disgust'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
     if( primary_emo=='Surprised' and secondary_emo =='Angry'):
-        Play= music_player.loc[(music_player['mood'] =='Calm') & (music_player['SE']=='Happy')]
+        Play= music_player.loc[(music_player['mood'] =='Happy') & (music_player['SE']=='Energetic')]
         Play = Play.sort_values(by="popularity", ascending=False)
         Play = Play[:10].reset_index(drop=True)
 
@@ -261,11 +261,8 @@ for r in range(100):
   acc1.append(accuracy1)
   acc_SVC.append(accSVC)
   acc_DT.append(accDT)
-print("GNB={}, LR={}, SVC={}, DT={}".format(mean(acc), mean(acc1), mean(acc_SVC),mean(acc_DT)))
+# print("GNB={}, LR={}, SVC={}, DT={}".format(mean(acc), mean(acc1), mean(acc_SVC),mean(acc_DT)))
 
 
 second_emo = gnb.predict(X)
 music_player.insert(0, 'SE', second_emo)
-
-songs = Recommend_Songs('Sad',"Neutral")
-print(songs)
