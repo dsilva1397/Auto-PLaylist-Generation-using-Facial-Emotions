@@ -34,6 +34,9 @@ def get_song(song_name, browser, track_url,first_click):
 		mouse.position = (553.3046875, 653.88671875)
 		time.sleep(6)
 		mouse.click(Button.left, 2)		
+		time.sleep(3)
+		mouse.press(Button.left)
+		mouse.release(Button.left)
 	else:
 		keyboard = CKey()
 		keyboard.press(Key.cmd)
@@ -44,6 +47,10 @@ def get_song(song_name, browser, track_url,first_click):
 		mouse.position = (553.3046875, 653.88671875)
 		time.sleep(5)
 		mouse.click(Button.left, 2)
+		time.sleep(3)
+		mouse.press(Button.left)
+		mouse.release(Button.left)
+
 	
 
 	while True:

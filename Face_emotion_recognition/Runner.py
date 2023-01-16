@@ -3,7 +3,7 @@ from Song_Mood import Recommend_Songs
 from SoundCloud import Play_Songs
 
 
-# Start Face-Emotion Detection.
+# Start Face-Emotion Detection.1
 detected_emotions = detect_emo()
 emo = avr_emotion(detected_emotions)
 
