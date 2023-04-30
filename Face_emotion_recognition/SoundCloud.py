@@ -36,7 +36,7 @@ def get_song(song_name, browser, track_url,first_click):
 		mouse.click(Button.left, 2)		
 		time.sleep(3)
 		mouse.press(Button.left)
-		mouse.release(Button.left)
+		# mouse.release(Button.left)
 	else:
 		keyboard = CKey()
 		keyboard.press(Key.cmd)
@@ -49,7 +49,7 @@ def get_song(song_name, browser, track_url,first_click):
 		mouse.click(Button.left, 2)
 		time.sleep(3)
 		mouse.press(Button.left)
-		mouse.release(Button.left)
+		# mouse.release(Button.left)
 
 	
 
